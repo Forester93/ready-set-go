@@ -2,13 +2,12 @@
 
 ## Contents
 
-• [Description](#description)
-• [User Story](#user-story)
-• [Technologies](#technologies)
-• [Links](#links)
-• [Questions](#questions)
+• [Description](#description)  
+• [User Story](#user-story)  
+• [Technologies](#technologies)  
+• [Links](#links)  
+• [Questions](#questions)  
 • [Contributing](#contributing)
-• [Rights](#rights)
 
 ## Description
 
@@ -21,18 +20,18 @@ Your lightweight fitness tracker tool to help you be on top of your exercises an
 • JavaScript  
 • JQuery  
 • NodeJS  
-• MySQL  
+• NoSQL  
 • Others
 
 ## Links
 
 ### Link to the Deployed Application
 
-[Ready Set Go Deployed Webpage](https://blogo4-notfound.herokuapp.com/home)
+[Ready Set Go Deployed Application](https://https://readysetgoau.herokuapp.com/.herokuapp.com/home)
 
 ### Link to the Github Repository
 
-[BlogO4 Github Repo](https://github.com/Forester93/blog-o-4-not-found)
+[Ready Set Go Github Repo](https://github.com/Forester93/ready-set-go)
 
 ### Screenshot of the Application
 
@@ -49,7 +48,3 @@ Contact the members (collectively 'The Team') as per the below contact informati
 | Name          | Email                    | Phone Number        | GitHubProfile                                                  |
 | ------------- | ------------------------ | ------------------- | -------------------------------------------------------------- |
 | Mark Forester | markforester93@gmail.com | +61-(0)-404-831-362 | [Mark Forester Github Profile](https://github.com/forester93/) |
-
-## Rights
-
-The Team reserves all its rights. This material is not to be duplicated or regenerated in any form.
