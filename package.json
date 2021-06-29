@@ -1,0 +1,38 @@
+{
+  "name": "ready_set_go",
+  "version": "1.0.0",
+  "description": "This is a fitness tracker to help you keep diary of your workouts in order to achieve progress.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "nodemon seeders/seed.js"
+  },
+  "author": "Mark Forester",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.13.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Forester93/ready-set-go.git"
+  },
+  "keywords": [
+    "Fitness",
+    "Mongoose",
+    "MongoDB",
+    "Tracker",
+    "Full",
+    "Stack",
+    "Node.js",
+    "Express.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/Forester93/ready-set-go/issues"
+  },
+  "homepage": "https://github.com/Forester93/ready-set-go#readme"
+}
