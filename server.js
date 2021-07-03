@@ -25,6 +25,26 @@ app.get("/", (req, res) => {
   res.redirect("index.html");
 });
 
+app.get("/exercise", (req, res) => {
+  res.redirect("exercise.html");
+});
+
+app.get("/stats", (req, res) => {
+  res.redirect("stats.html");
+});
+
+//create new workout
+app.post("/api/workouts", async (req, res) => {
+  try {
+    console.log(req.body);
+    const newWorkout = await db.readySetGoDB.insert(req.body);
+    res.json(newWorkout);
+  } catch (err) {
+    console.log(err);
+    res.send(err);
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
