@@ -22,7 +22,7 @@ router.get("/", async (req, res) => {
     const allWorkouts = await db.Workout.find({});
     for (let item of allWorkouts) {
       item.calculateDuration();
-      console.log(item.totalDuration);
+      //   console.log(item.totalDuration);
     }
     // console.log(allWorkouts);
     res.json(allWorkouts);
@@ -39,9 +39,10 @@ router.get("/range", async (req, res) => {
     // console.log(allWorkouts);
     for (let item of allWorkouts) {
       item.calculateDuration();
-      console.log(item.totalDuration);
+      //   console.log(item.totalDuration);
     }
-    res.json(allWorkouts);
+    let rangeWorkouts = allWorkouts.slice(Math.max(allWorkouts.length - 7, 0));
+    res.json(rangeWorkouts);
   } catch (err) {
     console.log(err);
     res.send(err);
@@ -65,7 +66,7 @@ router.put("/:id", async (req, res) => {
       },
       { new: true }
     );
-    console.log(updatedWorkout);
+    // console.log(updatedWorkout);
   } catch (err) {
     console.log(err);
     res.send(err);
