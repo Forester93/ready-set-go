@@ -27,7 +27,7 @@ A lightweight fitness tracker tool to help you be on top of your exercises and f
 
 ### Link to the Deployed Application
 
-[Ready Set Go Deployed Application](https://https://readysetgoau.herokuapp.com/)
+[Ready Set Go Deployed Application](https://readysetgoau.herokuapp.com/)
 
 ### Link to the Github Repository
 
@@ -43,7 +43,7 @@ You can reach out to us over one of the following for any questions about this a
 
 ## Contributing
 
-Contact the members (collectively 'The Team') as per the below contact information.
+Contact me as per the below contact information.
 
 | Name          | Email                    | Phone Number        | GitHubProfile                                                  |
 | ------------- | ------------------------ | ------------------- | -------------------------------------------------------------- |
