@@ -11,7 +11,7 @@
 
 ## Description
 
-Your lightweight fitness tracker tool to help you be on top of your exercises and fitness goals!
+A lightweight fitness tracker tool to help you be on top of your exercises and fitness goals!
 
 ### Technologies
 
@@ -27,7 +27,7 @@ Your lightweight fitness tracker tool to help you be on top of your exercises an
 
 ### Link to the Deployed Application
 
-[Ready Set Go Deployed Application](https://https://readysetgoau.herokuapp.com/.herokuapp.com/home)
+[Ready Set Go Deployed Application](https://https://readysetgoau.herokuapp.com/)
 
 ### Link to the Github Repository
 
