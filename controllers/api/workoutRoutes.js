@@ -20,7 +20,11 @@ router.post("/", async (req, res) => {
 router.get("/", async (req, res) => {
   try {
     const allWorkouts = await db.Workout.find({});
-    console.log(allWorkouts);
+    for (let item of allWorkouts) {
+      item.calculateDuration();
+      console.log(item.totalDuration);
+    }
+    // console.log(allWorkouts);
     res.json(allWorkouts);
   } catch (err) {
     console.log(err);
@@ -47,6 +51,7 @@ router.put("/:id", async (req, res) => {
     const updatedWorkout = await db.Workout.findOneAndUpdate(
       { _id: req.params.id },
       {
+        day: new Date(new Date().setDate(new Date().getDate() - 2)),
         $push: {
           exercises: req.body,
         },

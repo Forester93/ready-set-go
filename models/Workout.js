@@ -27,7 +27,8 @@ const workoutSchema = new Schema({
 workoutSchema.methods.calculateDuration = function () {
   console.log(this.exercises.reduce((acc, { duration }) => (acc += duration)));
   this.totalDuration = this.exercises.reduce(
-    (acc, { duration }) => (acc += duration)
+    (acc, { duration }) => acc + duration,
+    0
   );
 };
 
