@@ -36,7 +36,11 @@ router.get("/", async (req, res) => {
 router.get("/range", async (req, res) => {
   try {
     const allWorkouts = await db.Workout.find({});
-    console.log(allWorkouts);
+    // console.log(allWorkouts);
+    for (let item of allWorkouts) {
+      item.calculateDuration();
+      console.log(item.totalDuration);
+    }
     res.json(allWorkouts);
   } catch (err) {
     console.log(err);
@@ -48,6 +52,9 @@ router.get("/range", async (req, res) => {
 
 router.put("/:id", async (req, res) => {
   try {
+    if (!req.body) {
+      res.send(err);
+    }
     const updatedWorkout = await db.Workout.findOneAndUpdate(
       { _id: req.params.id },
       {
